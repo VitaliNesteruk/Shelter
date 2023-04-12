@@ -128,7 +128,7 @@ header {
     gap: 120px
 }
 
-.about-content img{
+.about-content img {
     min-height: 408px;
     min-width: 300px;
 }
@@ -159,6 +159,143 @@ h3 {
     gap: 60px
 }
 
-.pets-content  h3{
+.pets-content  h3 {
     text-align: center;
+}
+
+.slider {
+    display: flex;
+    gap: 90px;
+}
+
+.slider-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 9px 9px 0 0;
+}
+
+.slider .button {
+    background-color: var(--color-light-s);
+    border: 2px solid;
+    border-color: var(--color-primary);
+}
+
+.slider .button:hover {
+    background-color: var(--color-primary);
+}
+
+h4 {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    color: var(--color-dark-l);
+    letter-spacing: 0.06em;
+}
+
+.help-content {
+    background-color: #FFFFFF;
+    padding: 80px 127px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px
+}
+
+.help-content h3 {
+    text-align: center;
+}
+
+.help-content .wrapper-information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    justify-content: center;
+}
+
+.help-content .help-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.donate-content {
+    background-color: #FFFFFF;
+    padding: 80px 183px 100px;
+    display: flex;
+    gap: 30px;
+}
+
+.donate-content .donate-information {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.donate-content .bank-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.donate-content .credit-card {
+    display: flex;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: var(--color-primary);
+    border-radius: 9px;
+}
+
+.donate-content .bank-info p:first-child {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    color: var(--color-dark-l);
+    letter-spacing: 0.06em;
+}
+
+.donate-content .bank-info p:last-child {
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color-dark-m);
+}
+
+footer {
+    background-image: url(../images/start-screen-gradient-background.png);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 0;
+}
+
+.footer-content .contacts, .locations {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.footer-content h3 {
+    color: #FFFFFF;
+}
+
+.footer-info {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-info img {
+    object-fit: none;
+}
+
+.footer-info h4 {
+    color: var(--color-primary);
 }
