@@ -121,7 +121,7 @@ header {
 }
 
 .about-content {
-    background-color: #FFFFFF;
+    background-color: var(--color-light-xl);
     padding: 80px 215px 100px;
     display: flex;
     justify-content: space-between;
@@ -151,7 +151,7 @@ h3 {
 }
 
 .pets-content {
-    background-color: #FFFFFF;
+    background-color: var(--color-light-l);
     padding: 80px 145px 100px;
     display: flex;
     flex-direction: column;
@@ -169,10 +169,12 @@ h3 {
 }
 
 .slider-element {
+    background-color: var(--color-light-s);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding-bottom: 30px;
     border-radius: 9px 9px 0 0;
 }
 
@@ -195,8 +197,42 @@ h4 {
     letter-spacing: 0.06em;
 }
 
+/*Modal START*/
+.modal {
+    background-color: var(--color-light-s);
+}
+
+.modal h3 {
+    color: #000000;
+}
+
+.modal h4 {
+    color: #000000;
+}
+
+.modal-container {
+    display: flex;
+    color: #000000;
+}
+
+.ul {
+    color-scheme: var(--color-primary);
+}
+
+.li {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    color: #000000;
+    letter-spacing: 0.06em;
+    color-scheme: var(--color-primary);
+}
+
+/*Modal END*/
+
 .help-content {
-    background-color: #FFFFFF;
+    background-color: var(--color-light-xl);
     padding: 80px 127px 100px;
     display: flex;
     flex-direction: column;
@@ -223,7 +259,7 @@ h4 {
 }
 
 .donate-content {
-    background-color: #FFFFFF;
+    background-color: var(--color-light-l);
     padding: 80px 183px 100px;
     display: flex;
     gap: 30px;
