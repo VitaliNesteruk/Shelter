@@ -356,4 +356,5 @@ footer {
 
 .footer-info h4 {
     color: var(--color-primary);
+    max-width: 280px;
 }
