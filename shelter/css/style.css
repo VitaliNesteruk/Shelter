@@ -1,7 +1,3 @@
-body {
-    background-image: #FFFFFF;
-}
-
 .container {
     width: 1280px;
     margin-left: auto;
@@ -114,7 +110,7 @@ header {
     cursor: pointer;
 }
 
-.header-body .main-icon img{
+.header-body .main-image img{
     min-height: 728px;
     min-width: 698px;
 }
