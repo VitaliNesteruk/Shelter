@@ -141,6 +141,7 @@ h3 {
     line-height: 130%;
     color: var(--color-dark-l);
     letter-spacing: 0.06em;
+    max-width: 380px;
 }
 
 .about-subheading {
@@ -278,6 +279,10 @@ h4 {
     padding: 80px 143px 100px;
     display: flex;
     gap: 30px;
+}
+
+.donate-content h3{
+    max-width: 320px;
 }
 
 .donate-content .bank-info {
