@@ -58,15 +58,14 @@ header {
     border-color: var(--color-primary);
 }
 
-.menu a:hover {
-    color: var(--color-light-s);
-}
-
-.menu a:focus{
-    color: var(--color-light-s);
+.menu .active a {
     border-bottom: 3px solid;
     border-color: var(--color-primary);
     padding-bottom: 4px;
+}
+
+.menu a:hover {
+    color: var(--color-light-s);
 }
 
 .header-body {
