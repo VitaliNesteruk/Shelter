@@ -1,0 +1,27 @@
+header.black-text {
+    background-image: none;
+    background-color: #FFFFFF;
+}
+
+header.black-text .logo-title {
+    color: var(--color-dark-l);
+}
+
+header.black-text .logo-subtitle {
+    color: var(--color-dark-3xl);
+}
+
+header.black-text .menu a {
+    color: var(--color-dark-l);
+}
+
+.pets-content {
+    padding: 80px 0 100px;
+}
+
+.pets-content .slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 60px 0;
+}
