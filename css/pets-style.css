@@ -3,15 +3,15 @@ header.black-text {
     background-color: #FFFFFF;
 }
 
-.black-text .logo-title {
+header.black-text .logo-title {
     color: var(--color-dark-l);
 }
 
-.black-text .logo-subtitle {
+header.black-text .logo-subtitle {
     color: var(--color-dark-3xl);
 }
 
-.black-text .menu a {
+header.black-text .menu a {
     color: var(--color-dark-l);
 }
 
@@ -19,7 +19,7 @@ header.black-text {
     padding: 80px 0 100px;
 }
 
-.slider {
+.pets-content .slider {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;

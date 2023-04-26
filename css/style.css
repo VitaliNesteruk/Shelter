@@ -29,9 +29,12 @@
     cursor: pointer;
 }
 
-header {
+.hero-section {
     background-image: url(../images/start-screen-gradient-background.png);
     background-size: cover;
+}
+
+header {
     padding: 30px 0;
 }
 
@@ -92,8 +95,6 @@ header {
 }
 
 .header-content {
-    background-image: url(../images/start-screen-gradient-background.png);
-    background-size: cover;
     padding-top: 90px;
 }
 
