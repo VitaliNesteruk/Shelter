@@ -55,17 +55,23 @@ header {
     line-height: 24px;
     color: var(--color-dark-s);
     text-decoration: none;
-    border-color: var(--color-primary);
+    display: inline-block;
+    position: relative;
 }
 
-.menu .active a {
-    border-bottom: 3px solid;
-    border-color: var(--color-primary);
-    padding-bottom: 4px;
+.menu a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 0;
+    height: 3px;
+    background: transparent;
+    transition: all 0.3s;
 }
 
-.menu a:hover {
-    color: var(--color-light-s);
+.menu a:hover::after, .menu .active a::after {
+    width: 100%;
+    background: var(--color-primary);
 }
 
 .header-body {

@@ -90,18 +90,23 @@ header {
     line-height: 24px;
     color: var(--color-dark-l);
     text-decoration: none;
-    border-color: var(--color-primary);
+    display: inline-block;
+    position: relative;
 }
 
-.menu .active a {
-    color: var(--color-dark-3xl);
-    border-bottom: 3px solid;
-    border-color: var(--color-primary);
-    padding-bottom: 4px;
+.menu a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 0;
+    height: 3px;
+    background: transparent;
+    transition: all 0.3s;
 }
 
-.menu a:hover {
-    color: var(--color-dark-3xl);
+.menu a:hover::after, .menu .active a::after {
+    background: var(--color-primary);
+    width: 100%;
 }
 
 .pets {
