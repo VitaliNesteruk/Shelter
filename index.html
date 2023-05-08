@@ -95,7 +95,7 @@
         </div>
     </div>
 
-    <div class="pets">
+    <div class="pets" id="pets">
         <div class="container">
             <div class="pets-content">
                 <div class="heading">
@@ -105,17 +105,17 @@
                     <div class="slider-element">
                         <img src="images/pets-katrine.png" alt="pets-katrine">
                         <h4>Katrine</h4>
-                        <button class="button" id="btn-001">Learn more</button>
+                        <button class="button" data-id="1">Learn more</button>
                     </div>
                     <div class="slider-element">
                         <img src="images/pets-jennifer.png" alt="pets-jennifer">
                         <h4>Jennifer</h4>
-                        <button class="button" id="btn-002">Learn more</button>
+                        <button class="button" data-id="2">Learn more</button>
                     </div>
                     <div class="slider-element">
                         <img src="images/pets-woody.png" alt="pets-woody">
                         <h4>Woody</h4>
-                        <button class="button" id="btn-003">Learn more</button>
+                        <button class="button" data-id="3">Learn more</button>
                     </div>
                 </div>
                 <button class="button">Get to know the rest</button>
@@ -126,57 +126,17 @@
     <div class="modal" id="modal">
         <div class="modal-container">
             <button class="button" id="modal-close">&times;</button>
-            <div class="content-1 content">
-                <img src="images/pets-katrine.png" alt="pets-katrine">
+            <div class="content">
+                <img src="images/pets-katrine.png" id="modal-image" alt="">
                 <div class="modal-content">
-                    <h3>Katrine</h3>
-                    <h4>Cat - British Short-hair</h4>
-                    <h5>Katrine is a beautiful girl. She is as soft as the finest velvet with
-                        a thick lush fur. Will love you until the last breath she takes
-                        as long as you are the one. She is picky about her affection. She
-                        loves cuddles and to stretch into your hands for a deeper relaxations.
-                    </h5>
+                    <h3 id="modal-name"></h3>
+                    <h4 id="modal-model"></h4>
+                    <h5 id="modal-description"></h5>
                     <ul>
-                        <li><span>Age:</span> <span>2 months</span></li>
-                        <li><span>Inoculations:</span> <span>none</span></li>
-                        <li><span>Diseases:</span> <span>none</span></li>
-                        <li><span>Parasites:</span> <span>none</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content-2 content">
-                <img src="images/pets-jennifer.png" alt="pets-jennifer">
-                <div class="modal-content">
-                    <h3>Jennifer</h3>
-                    <h4>Dog - Labrador</h4>
-                    <h5>Jennifer is a sweet 2 months old Labrador that is patiently waiting to
-                        find a new forever home. This girl really enjoys being able to go
-                        outside to run and play, but won't hesitate to play up a storm in the
-                        house if she has all of her favorite toys.
-                    </h5>
-                    <ul>
-                        <li><span>Age:</span> <span>2 months</span></li>
-                        <li><span>Inoculations:</span> <span>none</span></li>
-                        <li><span>Diseases:</span> <span>none</span></li>
-                        <li><span>Parasites:</span> <span>none</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content-3 content">
-                <img src="images/pets-woody.png" alt="pets-woody">
-                <div class="modal-content">
-                    <h3>Woody</h3>
-                    <h4>Dog - Golden Retriever</h4>
-                    <h5>Woody is a handsome 3 1/2 year old boy. Woody does know basic commands
-                        and is a smart pup. Since he is on the stronger side, he will learn a lot
-                        from your training. Woody will be happier when he finds a new family
-                        that can spend a lot of time with him.
-                    </h5>
-                    <ul>
-                        <li><span>Age:</span> <span>3 and 1/2 year</span></li>
-                        <li><span>Inoculations:</span> <span>none</span></li>
-                        <li><span>Diseases:</span> <span>none</span></li>
-                        <li><span>Parasites:</span> <span>none</span></li>
+                        <li><span>Age:</span> <span id="modal-age"></span></li>
+                        <li><span>Inoculations:</span> <span id="modal-inoculations"></span></li>
+                        <li><span>Diseases:</span> <span id="modal-diseases"></span></li>
+                        <li><span>Parasites:</span> <span id="modal-parasites"></span></li>
                     </ul>
                 </div>
             </div>

@@ -236,7 +236,7 @@ h5 {
     padding: 100px 30px;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.5s;
+    transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,18 +280,6 @@ h5 {
 }
 
 .modal .content {
-    display: none;
-}
-
-.modal .content-1.active {
-    display: flex;
-}
-
-.modal .content-2.active {
-    display: flex;
-}
-
-.modal .content-3.active {
     display: flex;
 }
 
