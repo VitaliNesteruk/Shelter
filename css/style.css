@@ -215,39 +215,113 @@ h4 {
     letter-spacing: 0.06em;
 }
 
+h5 {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 110%;
+    color: #000000;
+    letter-spacing: 0.06em;
+}
+
 /*Modal START*/
-.modal {
+.modal { 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41,41,41,0.6);
+    padding: 100px 30px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal .button {
+    position: absolute;
+    top: -60px;
+    left: 100%;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(41,41,41,0);
+    border: 2px solid;
+    border-color: var(--color-primary);
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.modal .button:hover {
+    background-color: var(--color-primary);
+}
+
+.modal .modal-container {
+    border-radius: 9px;
+    width: 900px;
+    min-height: 500px;
+    position: relative;
     background-color: var(--color-light-s);
-    display: none;
+    padding: 50px 20px;
+}
+
+.modal .content {
+    display: flex;
+}
+
+.modal img {
+    height: 500px;
+    border-bottom-left-radius: 10px;
 }
 
 .modal h3 {
     color: #000000;
+    margin-bottom: 10px;
 }
 
 .modal h4 {
     color: #000000;
 }
 
-.modal-container {
-    display: flex;
-    color: #000000;
+.modal h5 {
+    font-size: 15px;
+    margin-block: 40px;
 }
 
-.ul {
-    color-scheme: var(--color-primary);
+ul {
+    padding-left: 15px;
 }
 
-.li {
+li {
+    color: var(--color-primary);
+}
+
+li span{
     font-family: Georgia;
     font-weight: 400;
     font-size: 15px;
-    line-height: 110%;
-    color: #000000;
+    line-height: 170%;
     letter-spacing: 0.06em;
-    color-scheme: var(--color-primary);
+    color: #000000;
 }
 
+li span:nth-child(1){
+    font-weight: 700;
+}
 /*Modal END*/
 
 .help {
